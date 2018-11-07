@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://cdn.hipwallpaper.com/i/31/91/WnpzaC.jpg");
+  background-size: cover;
+  font-family: 'Gloria Hallelujah', cursive;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 1rem;
+  font-size: 1.25rem;
+}
+
+.piece-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.piece-container * {
+  padding: .5rem;
+  margin: .25rem;
+}
+
+.player-piece p {
+  display: block;
+  padding: 0;
+  margin: 0;
+  font-size: .0025rem;
+  color: transparent;
+}
+
+.game-board {
+  display: none; /* With js change to flex */
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 66%;
+  margin: auto;
+  padding: 1rem;
+  position: relative;
+}
+
+.game-piece {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-piece i {
+  font-size: 3rem;
+}
+
+#zone1, #zone2, #zone3,
+#zone4, #zone5, #zone6,
+#zone7, #zone8, #zone9 {
+  padding: 1rem;
+  flex: 0 0 26%; /* no grow, no shrink, 29% */
+  height: 100px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#zone1 {
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#zone2 {
+  border-bottom: 2px solid black;
+}
+
+#zone3 {
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#zone4 {
+  border-right: 2px solid black;
+}
+
+#zone6 {
+  border-left: 2px solid black;
+}
+
+#zone7 {
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#zone8 {
+  border-top: 2px solid black;
+}
+
+#zone9 {
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.comp-thought {
+  text-align: center;
+  font-size: 1.5rem;
+  display: none;
+}

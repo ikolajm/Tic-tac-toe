@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Tic Tac Toe</title>
+      <!--Google font-->
+      <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+      <!--Fontawesome-->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+      <link href="style.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+
+    <header>
+      <h1>Tic Tac Toe</h1>
+      <h2>Can you beat the computer?</h2>
+
+      <nav>
+        <!--Buttons-->
+        <div class="button-container">
+          <p>Will you be X or O?</p>
+          <p>(Choose one to begin game)</p>
+          <div class="piece-container">
+            <div id="x-container" class="player-piece">
+              <p>X</p>
+              <i id="x-icon" class="fas fa-times"></i>
+            </div>
+            <div id="o-container" class="player-piece">
+              <p>O</p>
+              <i id="o-icon" class="far fa-circle"></i>
+            </div>
+          </div>
+        </div>
+
+          <!--Reset-->
+          <div class="reset-container">
+            <p>Reset Game</p>
+            <i id="reset" class="fas fa-redo-alt"></i>
+          </div>
+      </nav>
+
+    </header>
+
+  <!-- DRAWN GAME BOARD
+          1 2 3
+          4 5 6
+          7 8 9 -->
+
+    <!--Game Board-->
+    <div class="game-board">
+      <div id="zone1"></div>
+      <div id="zone2"></div>
+      <div id="zone3"></div>
+      <div id="zone4"></div>
+      <div id="zone5"></div>
+      <div id="zone6"></div>
+      <div id="zone7"></div>
+      <div id="zone8"></div>
+      <div id="zone9"></div>
+    </div>
+
+    <p class="comp-thought">Computer is thinking...</p>
+
+  </body>
+  <script src="main.js" type="text/javascript"></script>
+</html>
